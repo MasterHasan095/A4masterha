@@ -1,0 +1,21 @@
+{
+  "personalDefaults" : {
+    "personalID": "991698598",
+    "personalFirst": "Hasan",
+    "personalLast": "Master",
+    "personalLogin" : "masterha" 
+  },
+  "carColours": [
+    {"colour": "Dark Grey"}, 
+    {"colour": "Silver"},
+    {"colour": "Blue"},
+    {"colour": "Red"}
+  ],
+  "carEngines": [
+    {"engine": "Gas"},
+    {"engine": "Hybrid"},
+    {"engine": "Electric"}    
+  ],
+  "optionLeather": "Leather Interior",
+  "optionRoof": "Sun Roof"
+}
