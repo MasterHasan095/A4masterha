@@ -1,0 +1,46 @@
+<form [formGroup]="sheridanForm" (ngSubmit)="onSubmit()">
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>Enter Student ID</mat-label>
+        <input matInput formControlName="studentId" required />
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Enter Student Login</mat-label>
+        <input matInput formControlName="studentLogin" required />
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Enter First Name</mat-label>
+        <input matInput formControlName="firstName" required />
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Enter Last Name</mat-label>
+        <input matInput formControlName="lastName" required />
+      </mat-form-field>
+    </div>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Colours Available</mat-label>
+      <mat-select formControlName="color">
+        <mat-option *ngFor="let color of colors" [value]="color">
+          {{ color }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Car Engine Selection</mat-label>
+      <div matInput>
+        <mat-radio-group formControlName="engine">
+          <mat-radio-button *ngFor="let engine of engines" [value]="engine">
+            {{ engine }}
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </mat-form-field>
+  
+    <button type="submit" mat-raised-button color="primary">Submit</button>
+  </form>
+  
